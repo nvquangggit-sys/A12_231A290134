@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A12_231A290134</string>
+    <string name="title">Lab A12 – Quản lý sinh viên</string>
+    <string name="subtitle">SQLite · thêm, đọc, thống kê</string>
+
+    <string name="hint_ma_sv">MSSV (10 số)</string>
+    <string name="hint_ho_ten">Họ và tên</string>
+    <string name="hint_lop">Lớp</string>
+    <string name="hint_diem">Điểm</string>
+    <string name="hint_email">Email (không bắt buộc)</string>
+
+    <string name="them">Thêm vào CSDL</string>
+    <string name="theo_lop">Theo lớp</string>
+    <string name="dong">Đóng</string>
+
+    <string name="thong_ke">%1$d sinh viên · ĐTB %2$s · Đạt %3$d · Cao nhất %4$s</string>
+    <string name="thong_ke_lop">Thống kê theo lớp</string>
+    <string name="ma_lop_format">%1$s · %2$s</string>
+    <string name="da_them">Đã thêm, id = %1$d</string>
+
+    <string name="err_ma_sv">MSSV phải gồm đúng 10 chữ số</string>
+    <string name="err_ho_ten">Chưa nhập họ tên</string>
+    <string name="err_lop">Chưa nhập lớp</string>
+    <string name="err_diem">Điểm phải là số</string>
+    <string name="err_diem_range">Điểm phải từ 0 đến 10</string>
+    <string name="err_trung_ma">MSSV này đã tồn tại trong CSDL</string>
+    <string name="err_email">Email không hợp lệ</string>
+
+    <string name="danh_sach_trong">Chưa có sinh viên — thêm bằng biểu mẫu phía trên</string>
+    <string name="chua_co_du_lieu">Chưa có dữ liệu để thống kê</string>
+</resources>
