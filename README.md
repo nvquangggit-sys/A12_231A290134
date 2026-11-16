@@ -35,8 +35,10 @@ app/src/main/res/
 └── drawable/bg_input.xml, bg_stats.xml, divider.xml
 
 docs/
-├── screenshots/           // 13 ảnh minh chứng (xem Phụ lục A của báo cáo)
-└── logs/logcat_a12.txt    // log của TAG A12_231A290134
+├── screenshots/           // 13 ảnh minh chứng thật (xem Phụ lục A của báo cáo)
+├── logs/logcat_a12.txt    // log của TAG A12_231A290134
+├── A12_231A290134_demo.mp4        // video demo 2 phút 41
+└── BaoCao_LabA12_231A290134.docx  // báo cáo (kèm bản .pdf)
 ```
 
 ## Cấu trúc CSDL (phiên bản 3)
@@ -98,7 +100,23 @@ adb logcat -s A12_231A290134
 ```
 
 Xem CSDL: **View → Tool Windows → App Inspection → Database Inspector**, chọn
-`quanlysv.db` → `sinh_vien`, dùng tab **Data / Schema / SQL**.
+`quanlysv.db` → `sinh_vien`. Bản Android Studio này không có tab Data / Schema / SQL riêng,
+nên xem cấu trúc bằng **Open New Query Tab** rồi chạy:
+
+```sql
+PRAGMA table_info(sinh_vien);
+SELECT * FROM sinh_vien WHERE diem >= 8 ORDER BY diem DESC;
+```
+
+## Video demo
+
+`docs/A12_231A290134_demo.mp4` — 2 phút 41, quay màn hình Pixel 6 (720 × 1600) bằng
+`adb shell screenrecord`, đi đúng kịch bản 1–6, 8 và NC3, NC4.
+
+## Báo cáo
+
+`docs/BaoCao_LabA12_231A290134.docx` và bản PDF cùng tên: 24 trang, ảnh minh chứng nhúng
+trực tiếp, mô tả 8 kịch bản, Database Inspector, 3 câu phân tích, NC1–NC4 và phần ôn tập.
 
 ## Kịch bản kiểm thử
 
@@ -107,13 +125,14 @@ Xem CSDL: **View → Tool Windows → App Inspection → Database Inspector**, c
 3. Tắt hẳn app rồi mở lại → dữ liệu còn, ô Lớp được điền sẵn (NC1).
 4. Thêm trùng MSSV → lỗi tại ô MSSV, không thêm dòng.
 5. Nhập điểm 15 → lỗi "Điểm phải từ 0 đến 10".
-6. Nhập điểm chữ → lỗi "Điểm phải là số", app không crash.
+6. Nhập chữ vào ô điểm → bàn phím số chặn ký tự; để trống rồi bấm thêm → lỗi "Điểm phải là số".
 7. Database Inspector → thấy đúng số dòng và cột `email`.
 8. Thêm đủ 5 sinh viên → 8 dòng, chip `8 sinh viên · ĐTB 6.63 · Đạt 6 · Cao nhất 9.2`.
 9. Nút **Theo lớp** → hộp thoại K22 (4 SV, ĐTB 6.25) và K23 (4 SV, ĐTB 7.00).
 
 ## Ghi chú về ảnh minh chứng
 
-Ảnh trong `docs/screenshots` hiện là **mockup dựng lại đúng bố cục** ứng dụng ở tỉ lệ 1080 × 2400
-(không phải ảnh chụp thiết bị). Trước khi nộp, thay bằng ảnh chụp thật từ emulator, giữ nguyên tên tệp;
-xem Phụ lục A của báo cáo để biết từng tệp cần chụp gì.
+13 ảnh trong `docs/screenshots` là **ảnh chụp thật**: 9 ảnh từ emulator Pixel 6 (API 34,
+1080 × 2400) bằng `adb shell screencap`, 4 ảnh chụp cửa sổ Android Studio (Database Inspector,
+Device Explorer). Ảnh được nhúng trực tiếp vào báo cáo, không phải liên kết; Phụ lục A của
+báo cáo liệt kê từng tệp và cách chụp lại.

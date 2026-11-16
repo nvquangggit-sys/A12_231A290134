@@ -20,8 +20,9 @@
 - Android Studio Quail 3 | 2026.1.3, JDK 17 (JBR đi kèm Android Studio)
 - Gradle 9.x, Android Gradle Plugin tương ứng
 - Emulator Pixel 6 API 34 (1080 × 2400, 420dpi)
-- Ảnh minh chứng trong `docs/screenshots` được dựng lại bằng Python/Pillow đúng bố cục ứng dụng;
-  xem ghi chú ở Phụ lục A của báo cáo.
+- Ảnh minh chứng trong `docs/screenshots` là ảnh chụp thật từ emulator (`adb screencap`) và từ
+  Android Studio; video demo quay bằng `adb shell screenrecord` và ghép bằng ffmpeg.
+- Báo cáo xuất từ Word (DOCX → PDF), kiểm tra bằng PyMuPDF.
 
 ## Thư viện dùng trong project
 
