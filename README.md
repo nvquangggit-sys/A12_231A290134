@@ -8,6 +8,18 @@
 thêm sinh viên, đọc lại danh sách từ đĩa sau khi tắt hẳn app, thống kê bằng hàm tổng hợp của SQL,
 và bốn bài nâng cao NC1–NC4.
 
+![Màn hình chính sau khi thêm đủ 8 sinh viên](docs/screenshots/a12_home.png)
+
+## Sản phẩm nộp
+
+| Sản phẩm | Vị trí |
+|----------|--------|
+| Mã nguồn Android | thư mục gốc repo (`app/`) |
+| Báo cáo DOCX + PDF (24 trang) | `docs/BaoCao_LabA12_231A290134.docx` / `.pdf` |
+| Video demo (2:41, 720 × 1600) | `docs/A12_231A290134_demo.mp4` |
+| Ảnh minh chứng (13 tệp) | `docs/screenshots/` |
+| Logcat phiên chạy đầy đủ | `docs/logs/logcat_a12.txt` |
+
 ## Kiến trúc
 
 ```
@@ -117,6 +129,12 @@ SELECT * FROM sinh_vien WHERE diem >= 8 ORDER BY diem DESC;
 
 `docs/BaoCao_LabA12_231A290134.docx` và bản PDF cùng tên: 24 trang, ảnh minh chứng nhúng
 trực tiếp, mô tả 8 kịch bản, Database Inspector, 3 câu phân tích, NC1–NC4 và phần ôn tập.
+
+Ba phụ lục ở cuối báo cáo:
+
+- **Phụ lục A** — danh mục 13 ảnh minh chứng kèm kịch bản/cách chụp lại từng tệp và lệnh quay video.
+- **Phụ lục B** — cấu trúc project và cấu hình build (compileSdk 36, minSdk 24, Java 17).
+- **Phụ lục C** — bảng đối chiếu từng yêu cầu của đề bài với mục trong báo cáo và minh chứng tương ứng.
 
 ## Kịch bản kiểm thử
 

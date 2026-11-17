@@ -1,10 +1,16 @@
 --------- beginning of main
-D/A12_231A290134( 4821): onCreate: tạo bảng lop và sinh_vien
-D/A12_231A290134( 4821): Nạp 3 sinh viên từ CSDL
-D/A12_231A290134( 4821): Đã thêm sinh viên, id = 4
-D/A12_231A290134( 4821): Nạp 4 sinh viên từ CSDL
-W/A12_231A290134( 4821): insert trả về -1: trùng ma_sv = 2312900004
-D/A12_231A290134( 4821): Đã thêm sinh viên, id = 5
-D/A12_231A290134( 4821): Nạp 5 sinh viên từ CSDL
-D/A12_231A290134( 4821): Thống kê theo lớp: 2 lớp
+D/A12_231A290134( 4609): onCreate: tạo bảng lop và sinh_vien
+D/A12_231A290134( 4609): Nạp 3 sinh viên từ CSDL
+D/A12_231A290134( 4609): Đã thêm sinh viên, id = 4
+D/A12_231A290134( 4609): Nạp 4 sinh viên từ CSDL
+W/A12_231A290134( 4609): insert trả về -1: trùng ma_sv = 2312900004
+D/A12_231A290134( 4609): Đã thêm sinh viên, id = 5
+D/A12_231A290134( 4609): Nạp 5 sinh viên từ CSDL
+D/A12_231A290134( 4609): Đã thêm sinh viên, id = 6
+D/A12_231A290134( 4609): Nạp 6 sinh viên từ CSDL
+D/A12_231A290134( 4609): Đã thêm sinh viên, id = 7
+D/A12_231A290134( 4609): Nạp 7 sinh viên từ CSDL
+D/A12_231A290134( 4609): Đã thêm sinh viên, id = 8
+D/A12_231A290134( 4609): Nạp 8 sinh viên từ CSDL
+D/A12_231A290134( 4609): Thống kê theo lớp: 2 lớp
 --------- beginning of system
